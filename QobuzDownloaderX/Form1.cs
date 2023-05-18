@@ -3789,7 +3789,7 @@ namespace QobuzDownloaderX
 
                     albumName = (string)joTrackResponse["album"]["title"]; albumName = DecodeEncodedNonAsciiCharacters(albumName);
                     albumNamePath = GetSafeFilename(albumName);
-                    albumNamePath += " - [" + albumId + "]";
+                    albumNamePath += " [" + albumId + "]";
                     albumTextBox.Invoke(new Action(() => albumTextBox.Text = albumName));
 
                     trackName = (string)joTrackResponse["title"]; trackName = trackName.Trim(); trackName = DecodeEncodedNonAsciiCharacters(trackName);
