@@ -3814,7 +3814,7 @@ namespace QobuzDownloaderX
                     isrc = (string)joTrackResponse["isrc"];
 
                     type = (string)joTrackResponse["album"]["release_type"];
-                    albumNamePath += "/" + type + "s";
+                    albumArtistPath += "/" + type + "s";
 
                     // Grab tag ints
                     trackNumber = (int)joTrackResponse["track_number"];
